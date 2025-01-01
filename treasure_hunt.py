@@ -32,14 +32,19 @@ print("Your mission is to find the treasure")
 lake = input("You are at a cross road.where do you want to go..? type 'left' or 'right'   ")
 if lake == "left" :
     print("\n")
-    wait_swim = input("Ho Ho Ho..you have come to a lake.There is an island in the middle.Type 'wait' or 'swim' for action ")
+    wait_swim = input("Ho Ho Ho..you have come to a lake.There is an island in the middle.Type 'wait' to wait for the boat or 'swim' for an action ")
     if wait_swim == "wait" :
         print("\n")
         door_color = input("You have arrived at the island unharmed.There is a house with 3 doors.'red'  'yellow' and 'blue' .which door you want to open?")
-        if door_color == "red" or "blue" :
-            print("oops.Game Over..!")
+        if door_color == "red" :
+            print("oops.You have entered a room full of beasts.game over!")
+        elif door_color == "blue" :
+            print("oooh noo.The room full of fire.You are dead.")    
+        elif door_color == "yellow" : 
+            print("Yaay...you got the tresure..Enjooyyy")
         else :
-            print("Yaay...you win")
+            print("you fool.you typed an invalid door.")
+        
     else :
         print("Game over...#the crocodiles got their dinner")
 else :
