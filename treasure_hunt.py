@@ -1,4 +1,4 @@
-# ps.. enlarge your terminal to see the map!
+# ps.. when playing enlarge your terminal to see the map!
 print('''
   ____________________________________________________________________
  / \-----     ---------  -----------     -------------- ------    --- /
